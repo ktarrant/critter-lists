@@ -1,12 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 import datetime
-from urllib.request import urljoin
 
 wiki_base_url = "https://animalcrossing.fandom.com"
-
-critter_list_urls_source = "/".join(
-    [wiki_base_url, "wiki/Guide:Monthly_critter_lists_(New_Horizons)"])
 
 fish_url = "/".join([wiki_base_url,
                      "wiki/Fish_(New_Horizons)"])
@@ -14,18 +10,6 @@ fish_url = "/".join([wiki_base_url,
 months_choices = []
 for i in range(1,13):
     months_choices.append(datetime.date(2020, i, 1).strftime('%B'))
-
-
-def get_critter_list_urls():
-    print(critter_list_urls_source)
-    page = requests.get(critter_list_urls_source)
-    soup = BeautifulSoup(page.text, 'html.parser')
-    content = soup.find("div", id="mw-content-text")
-    headers = [header.text.strip() for header in content.find_all("h2")]
-    url_lists = [url_list for url_list in content.find_all("ul")]
-    url_dicts = {header: {a['title']: a['href'] for a in url_list.find_all("a")}
-                 for header, url_list in zip(headers, url_lists)}
-    return url_dicts
 
 
 def format_critter_row(row):
@@ -49,12 +33,18 @@ def format_critter_row(row):
 
     return d
 
+def generate_critter_rows(tab):
+    for tr in tab.find_all("tr")[1:]:
+        row = format_critter_row(tr)
+        if row:
+            yield row
+
 def get_critter_list():
     print(fish_url)
     page = requests.get(fish_url)
     soup = BeautifulSoup(page.text, 'html.parser')
     content = soup.find("div", id="mw-content-text")
-    return {tab['title']: [format_critter_row(tr) for tr in tab.find_all("tr")]
+    return {tab['title']: list(generate_critter_rows(tab))
             for tab in content.find_all("div", {"class": "tabbertab"})}
 
 

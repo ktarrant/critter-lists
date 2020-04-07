@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2c5a27f-e23e-4ffe-9825-c15df6c162d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/critter_lists/grouping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/critter-lists.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/critter-lists.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/critter_lists/wiki_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/critter_lists/wiki_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiki_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiki_data.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +34,13 @@
   <component name="ProjectId" id="1Zy7BvGOLvOkyRrsnaOAA55f7MF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/critter_lists" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/critter_lists" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,7 +54,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.critter_lists.grouping">
+    <configuration name="critter_lists.grouping" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="critter-lists" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="critter_lists.grouping" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="critter_lists.wiki_data" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="critter-lists" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,6 +97,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.critter_lists.wiki_data" />
+      <item itemvalue="Python.critter_lists.grouping" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -93,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586066847897</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="workspace">
+      <created>1586067513811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586067513811</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,7 +142,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -110,6 +153,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="critter list json save" />
-    <option name="LAST_COMMIT_MESSAGE" value="critter list json save" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
 </project>
